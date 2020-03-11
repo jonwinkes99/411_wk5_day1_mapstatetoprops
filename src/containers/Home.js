@@ -1,11 +1,10 @@
 import {connect} from 'react-redux'
-import Dashboard from '../components/Dashboard'
+import Home from '../components/Home'
 
 const mapStateToProps = (state) => {
     return {
-        cars: state.cars,
-        user: state.user
+        cars: state.cars
     }
 }
 
-export default connect(mapStateToProps)(Dashboard)
+export default connect(mapStateToProps)(Home)
